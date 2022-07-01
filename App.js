@@ -11,8 +11,11 @@ export default function App() {
   const check = () => {
     const userAccount = "user123";
     const userPassword = "user123";
-    if(account == '' || password == '') setTime(1);
-    else setTime(2);
+    if(account == '' || password == ''){
+      setTime(1);
+    }else{
+      setTime(2);
+    }
     if(account == userAccount && password == userPassword){
       setAccountCorrect(true);
     }else{
